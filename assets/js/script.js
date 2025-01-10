@@ -1,44 +1,55 @@
 const LoTR1 = {
+
     section: "",
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpgl",
     title: "The Lord of the Rings: The Fellowship of the Ring",
     year: "2001",
+
     chrono: "4"
 }
 
 const LoTR2 = {
+
     section: "",
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
     title: "The Lord of the Rings: The Two Towers",
     year: "2002",
+
     chrono: "5"
 }
 
 const LoTR3 = {
+
     section: "",
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
     title: "The Lord of the Rings: The Return of the King",
     year: "2003",
+
     chrono: "6"
 }
 
 const Hobbit1 = {
+
     section: "",
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yHA9Fc37VmpUA5UncTxxo3rTGVA.jpg",
     title: "The Hobbit: An Unexpected Journey",
     year: "2012",
+
     chrono: "1"
 }
 
 const Hobbit2 = {
+
     section: "",
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xQYiXsheRCDBA39DOrmaw1aSpbk.jpg",
     title: "The Hobbit: The Desolation of Smaug",
     year: "2013",
+
     chrono: "2"
 }
 
 const Hobbit3 = {
+
     section: "",
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xT98tLqatZPQApyRmlPL12LtiWp.jpg",
     title: "The Hobbit: The Battle of the Five Armies",
@@ -71,3 +82,4 @@ localStorage.setItem("movies", JSON.stringify(movies));
 // we then take the selected section, and save that to the object over the previous placement
 
 // we then build the object again, and use the newly saved section to place it where the user wants it
+
