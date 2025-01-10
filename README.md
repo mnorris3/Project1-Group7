@@ -14,7 +14,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Usage
 
-To use this page, first open it. When opened, the movies in the series will be displayed in watch order. When you have seen a movie, click it and a pop up will apeear. Select what option you wish to place the movie into in order to keep track. When you leave and return to the page, it will remember your previous choices.
+Once you visit the page, the movies in the series will be displayed in watch order. When you have seen a movie, click it and a pop-up will apeear. Select what option you wish to place the movie into in order to keep track. When you leave and return to the page, it will remember your previous choices.
 
 ## Credits
 
