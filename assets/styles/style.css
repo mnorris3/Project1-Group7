@@ -1,61 +1,71 @@
+* {
+  border: 1px dashed red;
+}
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f4f4f4;
-    border-bottom: 2px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #ddd;
 }
 
 /* Header sections */
-.title{
-    font-size: 1.5rem;
-    font-weight: bold;
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .reset {
-    padding: 8px 16px;
-    font-size: 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .reset:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 /* Main sections */
 .movies {
-    background-color: #ffffff;
-    border: 1px solid #dee2e6;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-content: center;
+}
+.movies:only-child {
+    justify-content: center;
+    align-content: center;
+  }
+  
+
+.card {
+    background-color: #f9f9f9;
+    padding: 15px;
     border-radius: 5px;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Grid of movie images */
-.movie-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
+.card-title {
+  padding: 10px;
+  align-items: center;
 }
-
-.movie-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
