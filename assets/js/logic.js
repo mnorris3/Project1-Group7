@@ -30,7 +30,6 @@ function buildElement (type, title, parent) {
 };
 
 function renderMovies () {
-    // const posts = ;
     for (let index = 0; index < movies.length; index++) {
         const section = buildElement("section", "", mainEl);
         const img = buildElement("img", movies[index].image, section);
@@ -50,7 +49,6 @@ console.log(movies);
 // create the build element
 
 // create the render element
-
 
 
 
