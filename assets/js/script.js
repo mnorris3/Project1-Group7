@@ -1,6 +1,6 @@
 const LoTR1 = {
 
-    section: "",
+    section: "unsorted",
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpgl",
     title: "The Lord of the Rings: The Fellowship of the Ring",
     year: "2001",
@@ -10,7 +10,7 @@ const LoTR1 = {
 
 const LoTR2 = {
 
-    section: "",
+    section: "unsorted",
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
     title: "The Lord of the Rings: The Two Towers",
     year: "2002",
@@ -20,7 +20,7 @@ const LoTR2 = {
 
 const LoTR3 = {
 
-    section: "",
+    section: "unsorted",
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
     title: "The Lord of the Rings: The Return of the King",
     year: "2003",
@@ -30,7 +30,7 @@ const LoTR3 = {
 
 const Hobbit1 = {
 
-    section: "",
+    section: "unsorted",
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yHA9Fc37VmpUA5UncTxxo3rTGVA.jpg",
     title: "The Hobbit: An Unexpected Journey",
     year: "2012",
@@ -40,7 +40,7 @@ const Hobbit1 = {
 
 const Hobbit2 = {
 
-    section: "",
+    section: "unsorted",
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xQYiXsheRCDBA39DOrmaw1aSpbk.jpg",
     title: "The Hobbit: The Desolation of Smaug",
     year: "2013",
@@ -50,7 +50,7 @@ const Hobbit2 = {
 
 const Hobbit3 = {
 
-    section: "",
+    section: "unsorted",
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xT98tLqatZPQApyRmlPL12LtiWp.jpg",
     title: "The Hobbit: The Battle of the Five Armies",
     year: "2014",

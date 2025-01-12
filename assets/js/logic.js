@@ -1,4 +1,4 @@
-const mainEl = document.getElementById("unsorted")
+// const mainEl = document.getElementById("unsorted")
 
 const target = document.getElementById("unsorted");
 
@@ -14,18 +14,28 @@ const target = document.getElementById("unsorted");
 //     localStorage.setItem("movies", JSON.stringify(movieInfo))
 // }
 
-function buildElement (type, title, parent) {
+function buildElement (type, title, parent, attr, hasTextContent) {
     const element = document.createElement(type);
 
-    if (type === "img") {
-        element.setAttribute("src", title);
-        element.setAttribute("class", "card-img-top");
-    } else if (type === "section"){
-        element.setAttribute("class", "card");
-    } else {
+    // if (type === "img") {
+    //     element.setAttribute("src", title);
+    //     element.setAttribute("class", "card-img-top");
+    // } else if (type === "section"){
+    //     element.setAttribute("class", "card");
+    // } else {
+    //    element.textContent = title;
+    //     element.setAttribute("class", "card-title");
+    // }
+
+    Object.entries(attr).forEach(({key, value}) => {
+        element.setAttribute(key, value);
+    });
+
+    if (hasTextContent) {
         element.textContent = title;
-        element.setAttribute("class", "card-title");
     }
+    
+    // element.textContent = title;
     
 
     parent.appendChild(element);
@@ -35,9 +45,11 @@ function buildElement (type, title, parent) {
 
 function renderMovies () {
     for (let index = 0; index < movies.length; index++) {
-        const section = buildElement("section", "", mainEl);
-        const img = buildElement("img", movies[index].image, section);
-        const h5 = buildElement("h5", movies[index].title, section);
+        const getImage = movies[index].image;
+        const div = buildElement("div", "", document.getElementById(movies[index].section, {"class": "modal-dialog modal-dialog-centered"}, false))
+        const section = buildElement("section", "", div, {"class": "card"}, false);
+        const img = buildElement("img", getImage, section, {"src": getImage}, false);
+        const h5 = buildElement("h5", movies[index].title, section, {"class": "card-title"}, true);
         
     }
 };
@@ -45,9 +57,9 @@ function renderMovies () {
 renderMovies();
 // console.log(movies);
 
-// target.addEventListener("click", () => {
-//     console.log(event.target); 
-// });
+target.addEventListener("click", () => {
+    console.log(event.target); 
+});
 
 
 
