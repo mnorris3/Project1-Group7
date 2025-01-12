@@ -4,11 +4,33 @@
 /* General styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
+  text-align: center;
   margin: 0;
   padding: 0;
 }
 
+/* The Shire Portal Logo styling */
+.the-shire-logo {
+  padding: 50 px 0;
+  font-family: 'Cinzel', serif;  /* Cinzel is a font inspired by LOTR according to research */
+  font-size: 5rem;
+  font-weight: 500;
+  background-clip: text;
+  background-image: url(https://manybackgrounds.com/images/hd/a-man-is-standing-in-front-of-a-fire-f7bqrf4cptb6kxe0.jpg);
+  background-position-x: center;
+  color: transparent;
+  text-shadow: 3px 3px 7px rgba(197, 136, 5, 0.7); 
+  letter-spacing: 4px;
+}
+
+header {
+  background-image: url(https://cdnb.artstation.com/p/assets/images/images/064/815/229/4k/neil-burn-shire-03b-signed-sized.jpg?1711225159);
+  background-size: cover;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+
+}
 nav {
   display: flex;
   justify-content: space-between;
