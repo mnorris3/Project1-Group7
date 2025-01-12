@@ -1,4 +1,4 @@
-const mainEl = document.getElementById("plan-to-watch")
+const mainEl = document.getElementById("unsorted")
 
 // function readLocalStorage() {
 //     return JSON.parse(localStorage.getItem("movies"));
