@@ -1,5 +1,9 @@
 const mainEl = document.getElementById("unsorted")
 
+const target = document.getElementById("unsorted");
+
+
+
 // function readLocalStorage() {
 //     return JSON.parse(localStorage.getItem("movies"));
 // }
@@ -39,7 +43,12 @@ function renderMovies () {
 };
 
 renderMovies();
-console.log(movies);
+// console.log(movies);
+
+// target.addEventListener("click", () => {
+//     console.log(event.target); 
+// });
+
 
 
 // Create arrays to sort out the movies (seen, plan, unsorted)
