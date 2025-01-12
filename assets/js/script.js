@@ -14,7 +14,6 @@ const LoTR2 = {
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
     title: "The Lord of the Rings: The Two Towers",
     year: "2002",
-
     chrono: "5"
 }
 
@@ -24,7 +23,6 @@ const LoTR3 = {
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
     title: "The Lord of the Rings: The Return of the King",
     year: "2003",
-
     chrono: "6"
 }
 
@@ -34,7 +32,6 @@ const Hobbit1 = {
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yHA9Fc37VmpUA5UncTxxo3rTGVA.jpg",
     title: "The Hobbit: An Unexpected Journey",
     year: "2012",
-
     chrono: "1"
 }
 
@@ -44,7 +41,6 @@ const Hobbit2 = {
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xQYiXsheRCDBA39DOrmaw1aSpbk.jpg",
     title: "The Hobbit: The Desolation of Smaug",
     year: "2013",
-
     chrono: "2"
 }
 
