@@ -58,6 +58,8 @@ function renderMovies () {
     }
 };
 
+
+
 renderMovies();
 // console.log(movies);
 
