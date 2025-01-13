@@ -10,7 +10,7 @@ const LoTR1 = {
 
 const LoTR2 = {
 
-    section: "unsorted",
+    section: "seen",
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
     title: "The Lord of the Rings: The Two Towers",
     year: "2002",
