@@ -7,11 +7,11 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+  background: linear-gradient(45deg, #556D00, #928800, #A56D08,#8E643E);
 }
 
 /* The Shire Portal Logo styling */
 .the-shire-logo {
-  padding: 50 px 0;
   font-family: 'Cinzel', serif;  /* Cinzel is a font inspired by LOTR according to research */
   font-size: 5rem;
   font-weight: 500;
@@ -81,6 +81,29 @@ nav {
   justify-content: center; /* Center items horizontally */
   align-content: center; /* Center items vertically */
 }
+
+/* styling the seen container section */
+#seen-container {
+  background-image: url(https://cdn.europosters.eu/image/1300/art-photo/the-lord-of-the-rings-eye-of-sauron-i130063.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 35%;
+}
+/* styling the plan-to-watch container section */
+#plan-to-watch-container {
+  background-image: url(https://images4.alphacoders.com/135/1358247.jpeg);
+  background-size: cover;
+  background-position-y: 30%;
+  background-repeat: no-repeat;
+}
+/* styling the unsorted container section */
+#unsorted-container {
+  background-image: url(https://assetsio.gnwcdn.com/magic-the-gathering-lord-of-the-rings-tales-of-middle-earth-artwork-councils-deliberation-preview.png?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
 .movies:only-child {
   justify-content: center;
   align-content: center;
@@ -104,3 +127,19 @@ nav {
   padding: 10px;
   align-items: center;
 }
+
+/* adjusting header font-size when screen size changes */
+  
+@media screen and (max-width: 770px) {
+  .the-shire-logo {
+   font-size: 4rem;
+  }
+  
+}
+
+@media screen and (max-width: 360px) {
+  .the-shire-logo {
+    font-size: 2.5rem;
+  }
+}
+
