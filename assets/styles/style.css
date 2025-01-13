@@ -32,6 +32,12 @@ header {
 
 }
 
+h2 {
+  color: white;
+  text-shadow: 0 0 10px black;
+  font-family: "MedievalSharp", serif;
+}
+
 /* Header sections */
 .title {
   font-size: 1.5rem;
@@ -107,12 +113,16 @@ header {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.6s ease-in;
+  font-family: "MedievalSharp", serif;
+
 }
 
 .card:hover {
-    background-color: green;
+    background-color: rgba(111, 189, 111, 0.678);
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+  text-shadow: 0 0 10px black;
   }
 
 .card-title {

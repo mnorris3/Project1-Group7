@@ -4,22 +4,17 @@
 
 We created this project so that anyone who has not seen the Lord of the Rings (LotR) movies can see a watch order and keep track of what they have or have not seen, as well as see watch next recommendations. Movie franchises with multiple movies can be difficult to jump into blind, especially with so many differing opinions on what order to watch them. In this webpage, we will show you the movies in the LotR series, as well as what to watch next, and you can select if you've watched them or not.
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
 ## Usage
 
 Once you visit the page, the movies in the series will be displayed in watch order. When you have seen a movie, click it and a pop-up will apeear. Select what option you wish to place the movie into in order to keep track. When you leave and return to the page, it will remember your previous choices.
 
+```md
+![main page screen shot](assets/images/pageSS.png)
+```
+
 ## Credits
 
 - Daniel Llorens https://github.com/dlastname
-- Jillian Gorman https://github.com/jillgorman
 - Jossie Haven: https://github.com/JossieHaven
 - Mike Norris: https://github.com/mnorris3
 
