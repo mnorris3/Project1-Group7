@@ -1,6 +1,10 @@
-// const mainEl = document.getElementById("unsorted")
-
 const target = document.getElementById("unsorted");
+
+const myModal = document.getElementById('myModal');
+const modal = new bootstrap.Modal(myModal); // Pass the element directly
+
+const planButton = document.getElementById("planButton");
+const seenButton = document.getElementById("seenButton");
 
 
 
@@ -25,18 +29,18 @@ function buildElement (type, title, parent, attr, hasTextContent, isModal) {
         element.textContent = title;
     }
 
-    if (isModal) {
-        const myModal = document.getElementById('myModal');
-        
+    if (isModal) {       
         element.addEventListener("click", (event) => {
             const target = event.target;
             const movieTitle = document.querySelector(".modal-title");
+            
             const dataMovie = target.parentElement.getAttribute("data-movie");
-            const modal = new bootstrap.Modal(myModal); // Pass the element directly
+            
             modal.show();
             console.log(dataMovie)
             movieTitle.textContent = dataMovie;
 
+            return dataMovie;
         });
     }
     
@@ -58,8 +62,36 @@ function renderMovies () {
     }
 };
 
+function setSection (section) {
+    for (let index = 0; index < movies.length; index++) {
+        if (movies[index].title === dataMovie) {
+            localStorage.setItem("section", movies)
+        }
+        
+    }
+}
+
 renderMovies();
 // console.log(movies);
+
+planButton.addEventListener("click", function(event) {
+    // localStorage.setItem
+    console.log("Plan");
+    modal.hide();
+});
+
+seenButton.addEventListener("click", function(event) {
+    console.log("Seen");
+    modal.hide();
+})
+
+// planButton.addEventListener("click", function(event) {
+//     console.log("Plan");
+// });
+
+// seenButton.addEventListener("click", function(event) {
+//     console.log("Seen");
+// })
 
 
 // Create arrays to sort out the movies (seen, plan, unsorted)
