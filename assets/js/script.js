@@ -24,7 +24,7 @@ const LoTR3 = {
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
     title: "The Lord of the Rings: The Return of the King",
     year: "2003",
-    synopsis: "As armies mass for a final battle that will decide the fate of the world--and powerful, ancient forces of Light and Dark compete to determine the outcome--one member of the Fellowship of the Ring is revealed as the noble heir to the throne of the Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit, Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched Gollum, ventures deep into the very dark heart of Mordor on his seemingly impossible quest to destroy the Ring of Power.​",
+    synopsis: "As armies mass for a final battle that will decide the fate of the world--and powerful, ancient forces of Light and Dark compete to determine the outcome--one member of the Fellowship of the Ring is revealed as the noble heir to the throne of the Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit, Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched Gollum, ventures deep into the very dark heart of Mordor on his seemingly impossible quest to destroy the Ring of Power.",
     chrono: "6"
 }
 
@@ -83,4 +83,3 @@ const movies = [LoTR1, LoTR2, LoTR3, Hobbit1, Hobbit2, Hobbit3];
 // we then take the selected section, and save that to the object over the previous placement
 
 // we then build the object again, and use the newly saved section to place it where the user wants it
-
