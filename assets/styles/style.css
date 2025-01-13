@@ -31,14 +31,6 @@ header {
   background-position-y: center;
 
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #f4f4f4;
-  border-bottom: 2px solid #ddd;
-}
 
 /* Header sections */
 .title {
@@ -76,8 +68,8 @@ nav {
 
 .movies {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* Adjust to 6 columns */
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 175px)); /* Adjust to 6 columns */
+  grid-gap: 20px;
   justify-content: center; /* Center items horizontally */
   align-content: center; /* Center items vertically */
 }
