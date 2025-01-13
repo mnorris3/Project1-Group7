@@ -8,6 +8,14 @@ const seenButton = document.getElementById("seenButton");
 
 let selectedMovie = ""
 
+function handleEmptyStorage() {
+    if (localStorage.length === 0) {
+        localStorage.setItem("movies", JSON.stringify(movies));
+    }
+}
+
+handleEmptyStorage();
+
 const storedMovies = JSON.parse(localStorage.getItem("movies")); //? is this needed?
 
 // function readLocalStorage() {
