@@ -30,10 +30,13 @@ function buildElement (type, title, parent, attr, hasTextContent, isModal) {
         
         element.addEventListener("click", (event) => {
             const target = event.target;
+            const movieTitle = document.querySelector(".modal-title");
             const dataMovie = target.parentElement.getAttribute("data-movie");
             const modal = new bootstrap.Modal(myModal); // Pass the element directly
             modal.show();
             console.log(dataMovie)
+            movieTitle.textContent = dataMovie;
+
         });
     }
     
