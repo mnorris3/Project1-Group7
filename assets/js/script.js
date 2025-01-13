@@ -55,7 +55,7 @@ const Hobbit3 = {
 
 const movies = [LoTR1, LoTR2, LoTR3, Hobbit1, Hobbit2, Hobbit3];
 
-localStorage.setItem("movies", JSON.stringify(movies));
+// localStorage.setItem("movies", JSON.stringify(movies));
 
 
 // Create arrays to sort out the movies (seen, plan, unsorted)
