@@ -18,16 +18,6 @@ handleEmptyStorage();
 
 const storedMovies = JSON.parse(localStorage.getItem("movies")); //? is this needed?
 
-// function readLocalStorage() {
-//     return JSON.parse(localStorage.getItem("movies"));
-// }
-
-// function storeLocalStorage(data) {
-//     const movieInfo = readLocalStorage();
-//     movieInfo = data;
-//     localStorage.setItem("movies", JSON.stringify(movieInfo))
-// }
-
 function buildElement(type, title, parent, attr, hasTextContent, isModal) {
   const element = document.createElement(type);
 
@@ -43,13 +33,21 @@ function buildElement(type, title, parent, attr, hasTextContent, isModal) {
     element.addEventListener("click", (event) => {
       const target = event.target;
       const movieTitle = document.querySelector(".modal-title");
+      const movieSyn = document.getElementById("modal-syn");
 
       selectedMovie = target.parentElement.getAttribute("data-movie");
 
       modal.show();
       console.log(selectedMovie);
       movieTitle.textContent = selectedMovie;
+      for (let i = 0; i < storedMovies.length; i++) {
+        const synopsis = storedMovies[i].synopsis;
+        if (storedMovies[i].title === selectedMovie) {
+            movieSyn.textContent = synopsis;
+        }
+        }
     });
+    
   }
 
   parent.appendChild(element);
