@@ -10,7 +10,7 @@ const LoTR1 = {
 
 const LoTR2 = {
 
-    section: "seen",
+    section: "unsorted",
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
     title: "The Lord of the Rings: The Two Towers",
     year: "2002",
@@ -55,7 +55,7 @@ const Hobbit3 = {
 
 const movies = [LoTR1, LoTR2, LoTR3, Hobbit1, Hobbit2, Hobbit3];
 
-localStorage.setItem("movies", JSON.stringify(movies));
+// localStorage.setItem("movies", JSON.stringify(movies));
 
 
 // Create arrays to sort out the movies (seen, plan, unsorted)
