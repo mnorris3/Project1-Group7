@@ -1,4 +1,8 @@
-const mainEl = document.getElementById("unsorted")
+// const mainEl = document.getElementById("unsorted")
+
+const target = document.getElementById("unsorted");
+
+
 
 // function readLocalStorage() {
 //     return JSON.parse(localStorage.getItem("movies"));
@@ -10,20 +14,32 @@ const mainEl = document.getElementById("unsorted")
 //     localStorage.setItem("movies", JSON.stringify(movieInfo))
 // }
 
-function buildElement (type, title, parent) {
+function buildElement (type, title, parent, attr, hasTextContent, isModal) {
     const element = document.createElement(type);
 
-    if (type === "img") {
-        element.setAttribute("src", title);
-        element.setAttribute("class", "card-img-top");
-    } else if (type === "section"){
-        element.setAttribute("class", "card");
-    } else {
+    Object.entries(attr).forEach(([key, value]) => {
+        element.setAttribute(key, value);
+    });
+
+    if (hasTextContent) {
         element.textContent = title;
-        element.setAttribute("class", "card-title");
+    }
+
+    if (isModal) {
+        const myModal = document.getElementById('myModal');
+        
+        element.addEventListener("click", (event) => {
+            const target = event.target;
+            const movieTitle = document.querySelector(".modal-title");
+            const dataMovie = target.parentElement.getAttribute("data-movie");
+            const modal = new bootstrap.Modal(myModal); // Pass the element directly
+            modal.show();
+            console.log(dataMovie)
+            movieTitle.textContent = dataMovie;
+
+        });
     }
     
-
     parent.appendChild(element);
     
     return element;
@@ -31,15 +47,19 @@ function buildElement (type, title, parent) {
 
 function renderMovies () {
     for (let index = 0; index < movies.length; index++) {
-        const section = buildElement("section", "", mainEl);
-        const img = buildElement("img", movies[index].image, section);
-        const h5 = buildElement("h5", movies[index].title, section);
+        const imageURL = movies[index].image;
+        const sectionEl = document.getElementById(movies[index].section);
+        const title = movies[index].title;
+
+        const section = buildElement("section", "", sectionEl, {"class": "card", "data-movie": title}, false, true);
+        const img = buildElement("img", imageURL, section, {"src": imageURL}, false, false);
+        const h5 = buildElement("h5", title, section, {"class": "card-title"}, true, false);
         
     }
 };
 
 renderMovies();
-console.log(movies);
+// console.log(movies);
 
 
 // Create arrays to sort out the movies (seen, plan, unsorted)
