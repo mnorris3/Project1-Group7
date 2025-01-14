@@ -16,7 +16,7 @@ function handleEmptyStorage() {
 
 handleEmptyStorage();
 
-const storedMovies = JSON.parse(localStorage.getItem("movies")); //? is this needed?
+const storedMovies = JSON.parse(localStorage.getItem("movies"));
 
 function buildElement(type, title, parent, attr, hasTextContent, isModal) {
   const element = document.createElement(type);

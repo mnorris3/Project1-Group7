@@ -10,6 +10,7 @@ Once you visit the page, the movies in the series will be displayed in watch ord
 
 ```md
 ![main page screen shot](assets/images/pageSS.png)
+https://mnorris3.github.io/Project1-Group7/
 ```
 
 ## Credits
